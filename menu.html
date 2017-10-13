@@ -3,7 +3,7 @@
 <html>
 	<head>
 
-		<title>Coucou</title>
+		<title>Star Wars</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
 		<link rel="stylesheet" href="./menu.css"/>
@@ -37,16 +37,20 @@
 		
 				</div>
 			</nav>
-
-			<p align="center">
+			<div class=".col-md-12" align="center">
 				<img src="images/globale.jpg" alt="imageGlobale">
-			</p>
+			</div>
 
+			
+
+			<div class=".col-md-6">
+
+			</div>
 			<table align="center">
   				 <tr>
        				<td>
        					<img src="images/luke.jpg"  alt="imageLuke" width="300px" height="200px"> 
-       					<p>
+       					<p id="paragraphe">
        						Luke Skywalker
        					</p>
        				</td>
@@ -78,6 +82,10 @@
        				</td>
    				</tr>
 			</table>
+			<ul id="listePerso">
+
+
+			</ul>
 	</body>
 	<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
 
@@ -86,6 +94,17 @@
 			$("img").hover(function(){
 				console.log($(this).attr("alt"));
 			});
+			jQuery.get("https://swapi.co/api/people/",function(data){
+
+				for(var i=1;i<data.results.length;i++){
+					console.log('result:',data.results[i].name);
+					$("body #listePerso").append("<li>"+data.results[i].name+"</li>");
+				}
+				//$("body #paragraphe").append(data.results[i].name);
+
+				});
+			
+			
 		 });
 
 		/*$(function ajax() {  
@@ -95,13 +114,13 @@
                 	});
                 });*/
 
-                function getinfos(url){
+                /*function getinfos(url){
                 	$.getJSON("url"),
                     function(dataJson){
                         alert("Message extract from Json:"+dataJson.world.message);
                     }
                     );
-                } 
+                }*/ 
 			
 	
 			
