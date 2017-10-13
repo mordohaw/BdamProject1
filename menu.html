@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- git config --global http.proxy proxymmi:3128 -->
 <html>
 	<head>
 
@@ -31,8 +32,44 @@
 						<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 					</form>
+
 		
 				</div>
 			</nav>
+
+			<p align="center">
+				<img src="https://i2.wp.com/smallthings.fr/wp-content/uploads/2015/03/star-wars-episode-7-image.jpg?resize=620%2C320" alt="imageGlobale">
+			</p>
+
+			<table>
+  				 <tr>
+       				<td>
+       					<img src="http://i1.mirror.co.uk/incoming/article9603913.ece/ALTERNATES/s1200/PROD-Luke-Skywalker-in-Star-Wars-film.jpg"  alt="imageLuke" width="150px" height="100px"> 
+       					<p>
+       						Luke Skywalker
+       					</p>
+       				</td>
+
+       				<td>33 ans</td>
+       				<td>Espagne</td>
+   				</tr>
+  				 <tr>
+       				<td>Michelle</td>
+      				 <td>26 ans</td>
+      				 <td>États-Unis</td>
+   				</tr>
+			</table>
 	</body>
+	<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("img").hover(function(){
+				console.log("hover");
+			});
+		 });
+			
+	
+			
+	</script>
 </html>
