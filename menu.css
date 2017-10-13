@@ -16,6 +16,10 @@ nav li{
 }
 
 
+body{
+	background-image:url("etoiles.jpg");
+	color:white;
+}
 
 nav li a{
 	display: block;

@@ -6,6 +6,7 @@
 		<title>Coucou</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="./menu.css"/>
 	</head>
 
 	<body>
@@ -65,7 +66,7 @@
 	<script>
 		$(document).ready(function() {
 			$("img").hover(function(){
-				console.log("hover");
+				console.log($(this).attr("alt"));
 			});
 		 });
 			
