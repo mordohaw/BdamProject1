@@ -82,7 +82,7 @@
        				</td>
    				</tr>
 			</table>
-			<ul id="listePerso">
+			<ul id="listePerso" class="list-group">
 
 
 			</ul>
@@ -94,11 +94,14 @@
 			$("img").hover(function(){
 				console.log($(this).attr("alt"));
 			});
+			$(".list-group-item").hover(function(){
+				$(this).css("color","#fff");
+			});
 			jQuery.get("https://swapi.co/api/people/",function(data){
 
 				for(var i=1;i<data.results.length;i++){
 					console.log('result:',data.results[i].name);
-					$("body #listePerso").append("<li>"+data.results[i].name+"</li>");
+					$("body #listePerso").append("<li class="+ "list-group-item"+">"+data.results[i].name+"</li>");
 				}
 				//$("body #paragraphe").append(data.results[i].name);
 
