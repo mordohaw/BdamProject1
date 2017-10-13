@@ -87,6 +87,21 @@
 				console.log($(this).attr("alt"));
 			});
 		 });
+
+		/*$(function ajax() {  
+                $.ajax({
+                	url: "https://swapi.co/api/people/1"
+                	type : "GET"
+                	});
+                });*/
+
+                function getinfos(url){
+                	$.getJSON("url"),
+                    function(dataJson){
+                        alert("Message extract from Json:"+dataJson.world.message);
+                    }
+                    );
+                } 
 			
 	
 			
