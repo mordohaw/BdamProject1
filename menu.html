@@ -81,7 +81,7 @@
    				</tr>
 			</table>
 			<div class=".col-md-4">
-
+				<h2>Personnages :</h2>
 				<ul id="listePerso" class="list-group">
 
 
@@ -93,6 +93,8 @@
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#monModal">
 				Launch demo modal
 				</button>
+
+
 				<div class="modal" id="monModal">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
@@ -133,7 +135,7 @@
 
 				for(var i=1;i<data.results.length;i++){
 					console.log('result:',data.results[i].name);
-					$("body #listePerso").append("<li class="+ "list-group-item"+">"+data.results[i].name+"</li>");
+					$("body #listePerso").append("<li class=list-group-item >" +"<a href='#'"+ "data-toggle="+ "modal" + "data-target=#monModal" +">" +data.results[i].name+"</a></li>");
 				}
 				$(".list-group-item").click(function(){
     
