@@ -43,9 +43,7 @@
 
 			
 
-			<div class=".col-md-6">
-
-			</div>
+			
 			<table align="center">
   				 <tr>
        				<td>
@@ -82,15 +80,19 @@
        				</td>
    				</tr>
 			</table>
-			<ul id="listePerso" class="list-group">
+			<div class=".col-md-6">
+
+				<ul id="listePerso" class="list-group">
 
 
-			</ul>
+				</ul>
+			</div>
 	</body>
 	<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
+			//Ajout d'un compteur lors du passage du curseur au-dessus des images
 			$("img").hover(function(){
 				console.log($(this).attr("alt"));
 			});

@@ -20,8 +20,14 @@ body{
 	background-image:url("etoiles.jpg");
 }
 
-nav li a{
+nav a{
 	display: block;
 	text-decoration: none;
 	background-color:#FFFFFF;
+}
+
+li:hover{
+  background-color:blue;
+  text-decoration:none;
+
 }
