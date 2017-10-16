@@ -1,8 +1,14 @@
 {
-  "name": "project1",
+  "name": "bdamproject1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/mordohaw/BdamProject1.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mordohaw/BdamProject1/issues"
   },
-  "homepage": "https://github.com/mordohaw/BdamProject1#readme",
-  "dependencies": {
-    "bootstrap": "^4.0.0-beta"
-  }
+  "homepage": "https://github.com/mordohaw/BdamProject1#readme"
 }
